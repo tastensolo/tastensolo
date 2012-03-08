@@ -1,0 +1,180 @@
+/* 
+ $Revision$
+ $Author$
+ $Date$
+
+ - Page
+   Skip
+   Header Navigation
+
+ */
+
+/* HTML5 HACK -------------------------------------- */  
+header, #content, section, footer, aside, nav, article {  
+  display: block;  
+}
+
+@media print {
+	p#skip {
+		display: none;
+		}
+	}
+
+body, h1, h2, h3, p, ul, ol, dl, dd, hr, th, td, form, fieldset, input, button { margin: 0; padding: 0; }
+img { border: 0 none; }
+html >/**/body a:active { position: relative; top: 1px; }
+
+body, input, select, textarea, button {
+  font-family: Verdana, Arial, sans-serif;
+  }
+body {
+  background-color: white;
+  color: #555;
+  font-size: 62.5%;  
+  }
+
+/* _______________________________________________________________________________________Page___ */
+
+#page  {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ___Skip___________________________ */
+
+p#skip {
+  left: -500em;
+  position: absolute;
+  }
+
+
+/* _________________________________________________________________________HEADER NAVIGATION___ */
+ 
+header {
+  background: #333;
+  padding-left: 20%;
+}
+ 
+header h1 a {
+  margin-right: 40%;
+  padding: 30px 2px;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #57C7BE;
+}
+header h1 a:hover {
+  color: #aaa;
+}
+ 
+header nav ul {
+  list-style-type: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+ 
+header nav ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ 
+header nav ul li a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #57C7BE;
+  text-decoration: none;
+}
+ 
+header nav ul li.active a,
+header nav ul li a:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+
+/* _________________________________________________________________________ASIDE NAVIGATION___ */
+
+#second-nav {
+  margin: 5px;
+  background-color: #57C7BE;
+  width: 100px;
+}
+
+#second-nav li {
+  padding: 10px 0;
+  list-style-type: none;
+  
+}
+
+#second-nav li a {
+  margin-left: -2px;
+  padding: 6px 16px;
+  color: #fff;
+  background-color: #57C7BE;
+  border: 1px solid #333;
+}
+#second-nav li a:hover,
+#second-nav li.active a {
+  background-color: #333;
+  color: #555;
+}
+ 
+/* CONTENT ------------------------------------------ */
+
+section {
+  width: 53%;
+  padding: 30px 1% 20px 20%;
+  display: inline-block;
+}
+ 
+/* SIDEBAR ------------------------------------------ */
+ 
+aside {
+  width: 25%;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  margin: 0 0 10px 0;
+  display: inline-block;
+
+ 
+}
+ 
+/* FOOTER ------------------------------------------ */
+footer {
+  background: #333;
+  bottom: 0;
+  height: 15%;
+  position: fixed;
+  width: 100%;
+}
+ 
+footer ul {
+  list-style-type: none;
+  font-weight: bold;
+  margin: 0;
+  right: 0px;
+  position: fixed;
+  bottom: 0px;
+}
+
+footer ul li {
+ display: inline-block;
+}
+
+footer ul li a {
+ color: #fff;
+ padding: 15px 20px;
+ display: block;
+ background-color: #333;
+ color: #444;
+}
+
+footer ul li a:hover {
+ background-color: #57C7BE;
+ color: #fff;
+}
+  
